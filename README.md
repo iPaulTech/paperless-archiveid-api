@@ -26,3 +26,4 @@ docker compose up -d
 ```
 
 Now should your Archive Number API instance be available at port 80 (if you haven't changed it).
+The URL should be: ==HOSTNAME/lastarchivenumber.php==
