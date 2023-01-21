@@ -1,0 +1,21 @@
+version: '3.9'
+services:
+  paperless-archiveid-api:
+    image: paperless-archiveid-api:latest
+    build: 
+      dockerfile: ./Dockerfile
+    container_name: paperless-archiveid-api
+    ports:
+    #Default Port is 80 in the image
+    - '80:80'
+    environment:
+      #Define Database Hostname
+      dbhost: 'your_pgdb_hostname'
+      #Define Database Port
+      dbport: '5432' #Default for PGDB
+      #Define Database Name
+      dbname: 'your_paperless-ng_db_name'
+      #Define Username for Database (Read-Only recommended!)
+      dbuser: 'your_readonly_user'
+      #Define Password for Database
+      dbpassword: 'your_super_secret_password'
