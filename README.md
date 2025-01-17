@@ -1,4 +1,5 @@
 # A API for getting the latest Archive Number for my Scanner
+# Moved to https://codeberg.org/berzdev/paperless-archiveid-api
 
 This tool grabs the latest Archive Number from Paperless-ng using the Postgresql Server Backend.
 And Displays it via a URL, for my DIY Raspi Scanner. So can I always get the next Archive ID for new scans.
